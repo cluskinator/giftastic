@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Unfreeze the animals</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 style="color: red">See an animal below... or add your favorite!</h1>
+    
+    <!-- Rendered Buttons will get Dumped Here  -->
+    <div id="buttons-view"></div>
+
+    <form id="movie-form">
+      <label for="movie-input">What's your favorite animal?</label>
+      <input type="text" id="movie-input" required>
+      <br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-movie" type="submit" value="Go" required>
+    </form>
+
+    <!-- Movies will Get Dumped Here -->
+    <div id="movies-view"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </div>
+</body>
+
+</html>
